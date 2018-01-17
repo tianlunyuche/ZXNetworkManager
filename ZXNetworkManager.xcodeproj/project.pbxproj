@@ -9,7 +9,9 @@
 /* Begin PBXBuildFile section */
 		35CE80FD200FA1AC00C13235 /* ZXNetworkManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35CE80F3200FA1AC00C13235 /* ZXNetworkManager.framework */; };
 		35CE8102200FA1AC00C13235 /* ZXNetworkManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 35CE8101200FA1AC00C13235 /* ZXNetworkManagerTests.m */; };
-		35CE8104200FA1AC00C13235 /* ZXNetworkManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 35CE80F6200FA1AC00C13235 /* ZXNetworkManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		35CE810F200FA1C500C13235 /* ZXNetWorkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 35CE810D200FA1C500C13235 /* ZXNetWorkManager.m */; };
+		35CE8138200FA39C00C13235 /* ZXModelManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 35CE8136200FA39C00C13235 /* ZXModelManager.h */; };
+		35CE8139200FA39C00C13235 /* ZXModelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 35CE8137200FA39C00C13235 /* ZXModelManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,11 +26,53 @@
 
 /* Begin PBXFileReference section */
 		35CE80F3200FA1AC00C13235 /* ZXNetworkManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZXNetworkManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		35CE80F6200FA1AC00C13235 /* ZXNetworkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZXNetworkManager.h; sourceTree = "<group>"; };
 		35CE80F7200FA1AC00C13235 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		35CE80FC200FA1AC00C13235 /* ZXNetworkManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZXNetworkManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		35CE8101200FA1AC00C13235 /* ZXNetworkManagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZXNetworkManagerTests.m; sourceTree = "<group>"; };
 		35CE8103200FA1AC00C13235 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35CE810D200FA1C500C13235 /* ZXNetWorkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZXNetWorkManager.m; sourceTree = "<group>"; };
+		35CE810E200FA1C500C13235 /* ZXNetWorkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZXNetWorkManager.h; sourceTree = "<group>"; };
+		35CE8112200FA24400C13235 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		35CE8113200FA24400C13235 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		35CE8114200FA24400C13235 /* AFNetworking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		35CE8115200FA24400C13235 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		35CE8116200FA24400C13235 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		35CE8117200FA24400C13235 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		35CE8118200FA24400C13235 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		35CE8119200FA24400C13235 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		35CE811A200FA24400C13235 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		35CE811B200FA24400C13235 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		35CE811C200FA24400C13235 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		35CE811D200FA24400C13235 /* AFURLSessionManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		35CE811E200FA24400C13235 /* AFURLSessionManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		35CE811F200FA24400C13235 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		35CE8120200FA24400C13235 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		35CE8122200FA24400C13235 /* AFAutoPurgingImageCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFAutoPurgingImageCache.h; sourceTree = "<group>"; };
+		35CE8123200FA24400C13235 /* AFAutoPurgingImageCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFAutoPurgingImageCache.m; sourceTree = "<group>"; };
+		35CE8124200FA24400C13235 /* AFImageDownloader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFImageDownloader.h; sourceTree = "<group>"; };
+		35CE8125200FA24400C13235 /* AFImageDownloader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFImageDownloader.m; sourceTree = "<group>"; };
+		35CE8126200FA24400C13235 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
+		35CE8127200FA24400C13235 /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
+		35CE8128200FA24400C13235 /* UIActivityIndicatorView+AFNetworking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIActivityIndicatorView+AFNetworking.h"; sourceTree = "<group>"; };
+		35CE8129200FA24400C13235 /* UIActivityIndicatorView+AFNetworking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIActivityIndicatorView+AFNetworking.m"; sourceTree = "<group>"; };
+		35CE812A200FA24400C13235 /* UIButton+AFNetworking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+AFNetworking.h"; sourceTree = "<group>"; };
+		35CE812B200FA24400C13235 /* UIButton+AFNetworking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+AFNetworking.m"; sourceTree = "<group>"; };
+		35CE812C200FA24400C13235 /* UIImage+AFNetworking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+AFNetworking.h"; sourceTree = "<group>"; };
+		35CE812D200FA24400C13235 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		35CE812E200FA24400C13235 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		35CE812F200FA24400C13235 /* UIKit+AFNetworking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIKit+AFNetworking.h"; sourceTree = "<group>"; };
+		35CE8130200FA24400C13235 /* UIProgressView+AFNetworking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIProgressView+AFNetworking.h"; sourceTree = "<group>"; };
+		35CE8131200FA24400C13235 /* UIProgressView+AFNetworking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIProgressView+AFNetworking.m"; sourceTree = "<group>"; };
+		35CE8132200FA24400C13235 /* UIRefreshControl+AFNetworking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIRefreshControl+AFNetworking.h"; sourceTree = "<group>"; };
+		35CE8133200FA24400C13235 /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
+		35CE8134200FA24400C13235 /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
+		35CE8135200FA24400C13235 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
+		35CE8136200FA39C00C13235 /* ZXModelManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZXModelManager.h; sourceTree = "<group>"; };
+		35CE8137200FA39C00C13235 /* ZXModelManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZXModelManager.m; sourceTree = "<group>"; };
+		35CE813B200FA41500C13235 /* KeyChain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyChain.h; sourceTree = "<group>"; };
+		35CE813C200FA41500C13235 /* KeyChain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyChain.m; sourceTree = "<group>"; };
+		35CE813D200FA41500C13235 /* KeychainItemWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeychainItemWrapper.h; sourceTree = "<group>"; };
+		35CE813E200FA41500C13235 /* KeychainItemWrapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeychainItemWrapper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +115,12 @@
 		35CE80F5200FA1AC00C13235 /* ZXNetworkManager */ = {
 			isa = PBXGroup;
 			children = (
-				35CE80F6200FA1AC00C13235 /* ZXNetworkManager.h */,
+				35CE813A200FA41500C13235 /* Keychain */,
+				35CE8110200FA24400C13235 /* AFNetworking */,
+				35CE810E200FA1C500C13235 /* ZXNetWorkManager.h */,
+				35CE810D200FA1C500C13235 /* ZXNetWorkManager.m */,
+				35CE8136200FA39C00C13235 /* ZXModelManager.h */,
+				35CE8137200FA39C00C13235 /* ZXModelManager.m */,
 				35CE80F7200FA1AC00C13235 /* Info.plist */,
 			);
 			path = ZXNetworkManager;
@@ -86,6 +135,75 @@
 			path = ZXNetworkManagerTests;
 			sourceTree = "<group>";
 		};
+		35CE8110200FA24400C13235 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				35CE8111200FA24400C13235 /* AFNetworking */,
+				35CE811F200FA24400C13235 /* LICENSE */,
+				35CE8120200FA24400C13235 /* README.md */,
+				35CE8121200FA24400C13235 /* UIKit+AFNetworking */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		35CE8111200FA24400C13235 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				35CE8112200FA24400C13235 /* AFHTTPSessionManager.h */,
+				35CE8113200FA24400C13235 /* AFHTTPSessionManager.m */,
+				35CE8114200FA24400C13235 /* AFNetworking.h */,
+				35CE8115200FA24400C13235 /* AFNetworkReachabilityManager.h */,
+				35CE8116200FA24400C13235 /* AFNetworkReachabilityManager.m */,
+				35CE8117200FA24400C13235 /* AFSecurityPolicy.h */,
+				35CE8118200FA24400C13235 /* AFSecurityPolicy.m */,
+				35CE8119200FA24400C13235 /* AFURLRequestSerialization.h */,
+				35CE811A200FA24400C13235 /* AFURLRequestSerialization.m */,
+				35CE811B200FA24400C13235 /* AFURLResponseSerialization.h */,
+				35CE811C200FA24400C13235 /* AFURLResponseSerialization.m */,
+				35CE811D200FA24400C13235 /* AFURLSessionManager.h */,
+				35CE811E200FA24400C13235 /* AFURLSessionManager.m */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		35CE8121200FA24400C13235 /* UIKit+AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				35CE8122200FA24400C13235 /* AFAutoPurgingImageCache.h */,
+				35CE8123200FA24400C13235 /* AFAutoPurgingImageCache.m */,
+				35CE8124200FA24400C13235 /* AFImageDownloader.h */,
+				35CE8125200FA24400C13235 /* AFImageDownloader.m */,
+				35CE8126200FA24400C13235 /* AFNetworkActivityIndicatorManager.h */,
+				35CE8127200FA24400C13235 /* AFNetworkActivityIndicatorManager.m */,
+				35CE8128200FA24400C13235 /* UIActivityIndicatorView+AFNetworking.h */,
+				35CE8129200FA24400C13235 /* UIActivityIndicatorView+AFNetworking.m */,
+				35CE812A200FA24400C13235 /* UIButton+AFNetworking.h */,
+				35CE812B200FA24400C13235 /* UIButton+AFNetworking.m */,
+				35CE812C200FA24400C13235 /* UIImage+AFNetworking.h */,
+				35CE812D200FA24400C13235 /* UIImageView+AFNetworking.h */,
+				35CE812E200FA24400C13235 /* UIImageView+AFNetworking.m */,
+				35CE812F200FA24400C13235 /* UIKit+AFNetworking.h */,
+				35CE8130200FA24400C13235 /* UIProgressView+AFNetworking.h */,
+				35CE8131200FA24400C13235 /* UIProgressView+AFNetworking.m */,
+				35CE8132200FA24400C13235 /* UIRefreshControl+AFNetworking.h */,
+				35CE8133200FA24400C13235 /* UIRefreshControl+AFNetworking.m */,
+				35CE8134200FA24400C13235 /* UIWebView+AFNetworking.h */,
+				35CE8135200FA24400C13235 /* UIWebView+AFNetworking.m */,
+			);
+			path = "UIKit+AFNetworking";
+			sourceTree = "<group>";
+		};
+		35CE813A200FA41500C13235 /* Keychain */ = {
+			isa = PBXGroup;
+			children = (
+				35CE813B200FA41500C13235 /* KeyChain.h */,
+				35CE813C200FA41500C13235 /* KeyChain.m */,
+				35CE813D200FA41500C13235 /* KeychainItemWrapper.h */,
+				35CE813E200FA41500C13235 /* KeychainItemWrapper.m */,
+			);
+			path = Keychain;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -93,7 +211,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35CE8104200FA1AC00C13235 /* ZXNetworkManager.h in Headers */,
+				35CE8138200FA39C00C13235 /* ZXModelManager.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,6 +313,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35CE810F200FA1C500C13235 /* ZXNetWorkManager.m in Sources */,
+				35CE8139200FA39C00C13235 /* ZXModelManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
